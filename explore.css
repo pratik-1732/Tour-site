@@ -1,0 +1,32 @@
+/* Root element (aka html) */
+:root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+    /* CSS Variables */
+    /* Fonts */
+    --ff-parisienne: "Parisienne", cursive;
+    --ff-montserrat: "Montserrat", sans-serif;
+    --ff-lora: "Lora", serif;
+    --ff-roboto: "Roboto", sans-serif;
+    --ff-rubik-dirt: "Rubik Dirt", cursive;
+    --fs-paragraphs: calc(0.8rem + 0.35vw);
+    --fs-links-btns: calc(0.65rem + 0.5vw);
+  }
+   
+   /* navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: saturate(180%) blur(10px);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 2px;
+    z-index: 10;
+    color: whitesmoke;
+  }
+  
+  
