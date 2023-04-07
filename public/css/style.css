@@ -30,7 +30,7 @@
 
 img {
   max-width: 100%;
-  display: block;
+  display: inline;
 }
 
 a {
@@ -94,22 +94,24 @@ html {
 }
 
 .logo {
-  font-family: 'Tillana', cursive;
+  font-family: "Tillana", cursive;
   font-size: 1.7rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  padding: 0 1rem;
   font-weight: 900;
-  color: rgb(254, 252, 252);  
+  color: rgb(254, 252, 252);
 }
 
-.limg{ 
+.limgname {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.limg {
   padding-top: 15px;
-  size: 20px;
-
+  padding-bottom: 2px;
+  width: 8rem;
 }
-
-
 
 .nav-links {
   display: flex;
@@ -218,7 +220,7 @@ section {
 
 .card {
   cursor: pointer;
-  height :400px
+  height: 400px;
 }
 
 .row .col {
@@ -384,13 +386,13 @@ section {
   color: white;
   text-align: justify;
   padding-top: 14em;
-  font-family: 'Itim', cursive;
+  font-family: "Itim", cursive;
   margin-left: 6em;
 }
 
 #about_us p::first-letter {
   padding-left: 47px;
-  font-size:65px;
+  font-size: 65px;
   color: black;
 }
 
@@ -674,10 +676,9 @@ img:hover {
   transform: scale(1.1);
 }
 
-.cir_border:hover{
-    color: #fc036b
+.cir_border:hover {
+  color: #fc036b;
 }
-
 
 .active {
   border: 2px solid whitesmoke;
@@ -698,23 +699,21 @@ img:hover {
 }
 
 body {
- background-color: black;
+  background-color: black;
   color: white;
 }
 
-body.dark{
+body.dark {
   background-color: white;
   color: black;
 }
 
-
-
 .label {
   width: 48px;
   height: 22px;
-  background-color:#111;
+  background-color: #111;
   display: flex;
-  border-radius:50px;
+  border-radius: 50px;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
@@ -736,23 +735,23 @@ body.dark{
 /* scroll button */
 #upbtn {
   display: none;
-  position: fixed; 
-  bottom: 20px; 
+  position: fixed;
+  bottom: 20px;
   right: 30px;
   z-index: 99;
-  border: none; 
-  outline: none; 
-  cursor: pointer; 
-  padding: 15px; 
-  font-size: 40px; 
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 40px;
 }
 #upbtn:hover {
-  background-color: #fc036b; 
+  background-color: #fc036b;
 }
 
 #quote {
   position: relative;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   text-transform: uppercase;
   font-size: 2em;
   letter-spacing: 4px;
